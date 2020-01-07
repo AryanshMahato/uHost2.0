@@ -1,0 +1,19 @@
+{
+  "name": "uhost2.0",
+  "version": "1.0.0",
+  "description": "A Landing Page of Hosting Website using Bootstrap and Normal HTML and CSS and NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryanshMahato/uHost2.0.git"
+  },
+  "author": "Aryansh Mahato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AryanshMahato/uHost2.0/issues"
+  },
+  "homepage": "https://github.com/AryanshMahato/uHost2.0#readme"
+}
