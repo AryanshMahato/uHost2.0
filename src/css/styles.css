@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lilita+One|Roboto&display=swap");
+body { overflow: hidden; }
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
 i { cursor: pointer; }
