@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto&display=swap');
+
+$colors-map: (
+	primary: #74b9ff,
+	primary-dark: #0a79df,
+	dark: #2c3335
+);
+
+@function colors($color) {
+	@return map-get($map: $colors-map, $key: $color);
+}
+
+@mixin desktop-view {
+	@media (min-width: 60rem) {
+		@content;
+	}
+}
+@mixin tab-view {
+	@media (min-width: 40rem) {
+		@content;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.main-header {
+	position: fixed;
+	width: 100vw;
+	max-width: 100%;
+	height: 5rem;
+	background: colors(primary);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.navbar-brand {
+	font-size: 3rem;
+	font-family: 'Lilita One', cursive;
+	padding: 0.5rem;
+}
+
+.nav-links {
+	display: none;
+
+	@include desktop-view {
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+}
+.nav-link {
+	display: block;
+	margin: 0 1rem;
+	font-size: 1.2rem;
+	border-bottom: 2px solid transparent;
+	padding: 0.5rem 0;
+	transition: 0.25s;
+}
+.nav-link:hover {
+	border-bottom: 3px solid white;
+}
+
+.nav-link--highlighted {
+	margin: 0;
+	margin-left: 1.5rem;
+	margin-right: 2rem;
+	font-size: 1.5rem;
+	border: none;
+	padding: 0.5rem 1rem;
+	background: colors(primary-dark);
+	border-radius: 32px;
+	cursor: pointer;
+	width: 12rem;
+	text-align: center;
+	a {
+		color: white;
+	}
+	&:hover {
+		border: 3px solid white;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	&:hover {
+		color: white;
+	}
+}
+
+.hamburger {
+	color: colors(dark);
+	@include desktop-view {
+		display: none;
+	}
+}

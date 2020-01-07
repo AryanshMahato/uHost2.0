@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AryanshMahato/uHost2.0/issues"
   },
-  "homepage": "https://github.com/AryanshMahato/uHost2.0#readme"
+  "homepage": "https://github.com/AryanshMahato/uHost2.0#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }
