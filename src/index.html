@@ -13,10 +13,11 @@
 		<title>uHost</title>
 	</head>
 	<body>
+		<div id="backdrop"></div>
 		<!-- Header Starts Here -->
 		<header class="main-header">
 			<div class="navbar-brand">uHost</div>
-			<ul class="nav-links menu">
+			<ul id="nav-links" class="nav-links menu">
 				<li class="nav-link"><a href="#">Support</a></li>
 				<li class="nav-link"><a href="#api-hostin">Api Hosting</a></li>
 				<li class="nav-link"><a href="#pricing">Pricing</a></li>
@@ -27,5 +28,19 @@
 			</ul>
 			<i id="hamburger" class="fa fa-bars hamburger fa-2x"></i>
 		</header>
+		<div id="mobile-nav" class="mobile-nav hide">
+			<ul class="nav-links">
+				<i id="back-button" class="fa fa-arrow-left fa-2x"></i>
+				<li class="nav-link"><a href="#">Support</a></li>
+				<li class="nav-link"><a href="#api-hostin">Api Hosting</a></li>
+				<li class="nav-link"><a href="#pricing">Pricing</a></li>
+				<li class="nav-link"><a href="#customers">Customers</a></li>
+				<li class="nav-link nav-link--highlighted">
+					<a href="#start-hosting">Start Hosting</a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="./js/index.js"></script>
 	</body>
 </html>
