@@ -83,7 +83,7 @@ a:hover { color: white; }
 
 @media (min-width: 60rem) { .pricing-section { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; max-width: 80rem; margin: auto; margin-top: 8rem; } }
 
-.pricing-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; width: 90vw; max-width: 22rem; margin: 1rem 2rem; text-align: center; background: #eaf0f1; padding: 2rem 1rem; border-radius: 15px; }
+.pricing-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; width: 90vw; max-width: 22rem; margin: 1rem 2rem; text-align: center; background: #eaf0f1; padding: 2rem 1rem; border-radius: 15px; -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); border: 2px solid #218f76; }
 
 .pricing-list .pricing__features { font-family: sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; border-radius: 15px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: #dae0e2; padding: 0.5rem 1rem; width: 100%; margin: 1.5rem 0; height: 200px; list-style: none; }
 
