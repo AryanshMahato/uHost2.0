@@ -78,3 +78,25 @@ a:hover { color: white; }
 
 @media (min-width: 60rem) { .hero-box__image { right: 150px; top: 125px; -webkit-transform: none; transform: none; bottom: 0; }
   .hero-box__image img { width: 30rem; } }
+
+.pricing-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 5rem; }
+
+@media (min-width: 60rem) { .pricing-section { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; max-width: 80rem; margin: auto; margin-top: 8rem; } }
+
+.pricing-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; width: 90vw; max-width: 22rem; margin: 1rem 2rem; text-align: center; background: #eaf0f1; padding: 2rem 1rem; border-radius: 15px; }
+
+.pricing-list .pricing__features { font-family: sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; border-radius: 15px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: #dae0e2; padding: 0.5rem 1rem; width: 100%; margin: 1.5rem 0; height: 200px; list-style: none; }
+
+.pricing-list .pricing__button { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; width: 70%; font-size: 1.2rem; padding: 0.3rem; border-radius: 15px; background: #01cbc6; color: black; border: 2px solid #218f76; outline: none; -webkit-transition: 0.25s; transition: 0.25s; cursor: pointer; }
+
+.pricing-list .pricing__button:hover, .pricing-list .pricing__button:active { background: white; }
+
+@media (min-width: 40rem) { .pricing-list { max-width: 35rem; } }
+
+@media (min-width: 60rem) { .pricing-list { max-width: 22rem; } }
+
+.pricing-list--highlighted { height: 450px; background: #7cec9f; }
+
+.pricing-list--highlighted .pricing__features { background: #218f76; color: white; }
+
+.pricing__feature { font-family: 'Roboto', sans-serif; font-size: 1.2rem; }

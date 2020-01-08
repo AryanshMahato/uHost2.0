@@ -9,11 +9,12 @@
 			rel="stylesheet"
 			href="/node_modules/font-awesome/css/font-awesome.min.css"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./src/css/styles.css" />
 		<title>uHost</title>
 	</head>
 	<body>
 		<div id="backdrop"></div>
+
 		<!-- Header Starts Here -->
 		<header class="main-header">
 			<div class="navbar-brand">uHost</div>
@@ -40,6 +41,8 @@
 				</li>
 			</ul>
 		</div>
+		<!-- Header Ends Here -->
+		<!-- Hero-Box Starts Here -->
 		<section class="hero-section">
 			<div class="hero-box">
 				<div class="hero-box__feature-section">
@@ -82,6 +85,43 @@
 				</svg>
 			</div>
 		</section>
-		<script src="./js/index.js"></script>
+		<!-- Hero-Box Ends Here -->
+
+		<main class="pricing-section" id="pricing">
+			<div class="pricing-list">
+				<h1 class="pricing__annotation">Free</h1>
+				<ul class="pricing__features">
+					<li class="pricing__feature">1 Workspace</li>
+					<li class="pricing__feature">Limited Traffic</li>
+					<li class="pricing__feature">10GB Storage</li>
+					<li class="pricing__feature">Basic Support</li>
+				</ul>
+				<button class="pricing__button">Choose Plan</button>
+			</div>
+			<div class="pricing-list pricing-list--highlighted">
+				<h1 class="pricing__annotation">Premium</h1>
+				<ul class="pricing__features">
+					<li class="pricing__feature">10 Workspace</li>
+					<li class="pricing__feature">UnLimited Traffic</li>
+					<li class="pricing__feature">100GB Storage</li>
+					<li class="pricing__feature">Premium Support</li>
+				</ul>
+				<button class="pricing__button">Choose Plan</button>
+			</div>
+			<div class="pricing-list">
+				<h1 class="pricing__annotation">Enterprise</h1>
+				<ul class="pricing__features">
+					<li class="pricing__feature">UnLimited Workspace</li>
+					<li class="pricing__feature">UnLimited Traffic</li>
+					<li class="pricing__feature">0.001$/GB Storage</li>
+					<li class="pricing__feature">Premium Support</li>
+				</ul>
+				<button class="pricing__button">Contact Sales</button>
+			</div>
+		</main>
+
+		<!-- Development Code -->
+		<div style="height: 200px;"></div>
+		<script src="./src/js/index.js"></script>
 	</body>
 </html>
