@@ -198,10 +198,10 @@ a {
 	display: flex;
 	position: absolute;
 	background: #fff;
-	height: 30vh;
+	height: 35vh;
 	width: 80vw;
 	margin-right: 0;
-	top: 100px;
+	top: 175px;
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 25px;
@@ -209,6 +209,10 @@ a {
 	justify-content: center;
 	box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.25);
 
+	@include tab-view() {
+		top: 100px;
+		max-width: 40vw;
+	}
 	@include desktop-view() {
 		height: 40vh;
 		min-width: 25vw;
@@ -216,10 +220,6 @@ a {
 		top: 200px;
 		left: 150px;
 		transform: none;
-	}
-
-	@include tab-view() {
-		max-width: 40vw;
 	}
 }
 
@@ -245,4 +245,34 @@ a {
 .feature__remarks {
 	width: 3rem;
 	height: 100%;
+}
+// Feature Div Ends Here
+
+.hero-box__image {
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 5rem;
+
+	img {
+		width: 10rem;
+	}
+
+	@include tab-view() {
+		display: block;
+		img {
+			width: 18rem;
+		}
+	}
+
+	@include desktop-view() {
+		right: 150px;
+		top: 125px;
+		transform: none;
+		bottom: 0;
+		img {
+			width: 30rem;
+		}
+	}
 }

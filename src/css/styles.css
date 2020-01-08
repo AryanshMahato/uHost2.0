@@ -57,14 +57,24 @@ a:hover { color: white; }
 
 .hero-wavy { fill: #0a79df; }
 
-.hero-box__feature-section { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; background: #fff; height: 30vh; width: 80vw; margin-right: 0; top: 100px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 25px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.25); }
+.hero-box__feature-section { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; background: #fff; height: 35vh; width: 80vw; margin-right: 0; top: 175px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 25px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.25); }
+
+@media (min-width: 40rem) { .hero-box__feature-section { top: 100px; max-width: 40vw; } }
 
 @media (min-width: 60rem) { .hero-box__feature-section { height: 40vh; min-width: 25vw; width: 25vw; top: 200px; left: 150px; -webkit-transform: none; transform: none; } }
-
-@media (min-width: 40rem) { .hero-box__feature-section { max-width: 40vw; } }
 
 .hero-box__features { display: -ms-grid; display: grid; margin: 1rem; height: 80%; width: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-right: 0; -ms-grid-columns: 50% 40%; grid-template-columns: 50% 40%; list-style: none; }
 
 .hero-box__feature { -ms-grid-column-align: center; justify-self: center; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; font-size: 2rem; font-family: 'Roboto', sans-serif; }
 
 .feature__remarks { width: 3rem; height: 100%; }
+
+.hero-box__image { display: none; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: 5rem; }
+
+.hero-box__image img { width: 10rem; }
+
+@media (min-width: 40rem) { .hero-box__image { display: block; }
+  .hero-box__image img { width: 18rem; } }
+
+@media (min-width: 60rem) { .hero-box__image { right: 150px; top: 125px; -webkit-transform: none; transform: none; bottom: 0; }
+  .hero-box__image img { width: 30rem; } }
