@@ -93,6 +93,18 @@ a:hover { color: white; }
 
 .pricing__feature { font-family: 'Roboto', sans-serif; font-size: 1.2rem; }
 
+.information { margin-top: 5rem; background: #eaf0f1; padding: 2rem 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+@media (min-width: 60rem) { .information { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; -ms-flex-pack: distribute; justify-content: space-around; } }
+
+.information__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; margin: 2rem 0; }
+
+.information__list div { font-size: 1.3rem; font-family: 'Roboto', sans-serif; margin: 1rem 0; }
+
+@media (min-width: 60rem) { .information__list div { margin: 1.5rem 0; } }
+
+.information__list img, .information__list i { width: 80px; height: 80px; }
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
 body { overflow-x: hidden; }
