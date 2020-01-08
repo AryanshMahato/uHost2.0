@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lilita+One|Roboto&display=swap");
-body { overflow-x: hidden; }
-
-* { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
-
-i { cursor: pointer; }
-
-#backdrop { display: none; position: absolute; background: rgba(0, 0, 0, 0.4); height: 100vh; width: 100vw; z-index: 110; -webkit-transition: 0.5s; transition: 0.5s; }
-
 .main-header { position: fixed; width: 100vw; max-width: 100%; z-index: 100; height: 5rem; background: #74b9ff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 1rem; }
 
 .navbar-brand { font-size: 3rem; font-family: 'Lilita One', cursive; padding: 0.5rem; }
@@ -100,3 +92,11 @@ a:hover { color: white; }
 .pricing-list--highlighted .pricing__features { background: #218f76; color: white; }
 
 .pricing__feature { font-family: 'Roboto', sans-serif; font-size: 1.2rem; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
+
+body { overflow-x: hidden; }
+
+i { cursor: pointer; }
+
+#backdrop { display: none; position: absolute; background: rgba(0, 0, 0, 0.4); height: 100vh; width: 100vw; z-index: 110; -webkit-transition: 0.5s; transition: 0.5s; }

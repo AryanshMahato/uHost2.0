@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto&display=swap');
+
+@import './variables';
+
+@import './header.scss';
+@import './hero.scss';
+@import './pricing.scss';
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+i {
+	cursor: pointer;
+}
+
+#backdrop {
+	display: none;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	width: 100vw;
+	z-index: 110;
+	transition: 0.5s;
+}

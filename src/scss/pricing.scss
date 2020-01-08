@@ -1,0 +1,87 @@
+@import './variables';
+
+.pricing-section {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5rem;
+
+	@include desktop-view() {
+		flex-flow: row;
+		max-width: 80rem;
+		margin: auto;
+		margin-top: 8rem;
+	}
+}
+
+.pricing-list {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	flex-grow: 1;
+	width: 90vw;
+	max-width: 22rem;
+	margin: 1rem 2rem;
+	text-align: center;
+	background: colors(primary-white);
+	padding: 2rem 1rem;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+	border: 2px solid colors(cta-dark-green);
+
+	.pricing__features {
+		font-family: sans-serif;
+		display: flex;
+		border-radius: 15px;
+		flex-flow: column;
+		justify-content: space-evenly;
+		background: colors(primary-grey);
+		padding: 0.5rem 1rem;
+		width: 100%;
+		margin: 1.5rem 0;
+		height: 200px;
+		list-style: none;
+	}
+
+	.pricing__button {
+		align-self: center;
+		width: 70%;
+		font-size: 1.2rem;
+		padding: 0.3rem;
+		border-radius: 15px;
+		background: colors(pricing-button);
+		color: black;
+		border: 2px solid colors(cta-dark-green);
+		outline: none;
+		transition: 0.25s;
+		cursor: pointer;
+
+		&:hover,
+		&:active {
+			background: white;
+		}
+	}
+
+	@include tab-view() {
+		max-width: 35rem;
+	}
+
+	@include desktop-view() {
+		max-width: 22rem;
+	}
+}
+
+.pricing-list--highlighted {
+	height: 450px;
+	background: colors(cta-green);
+	.pricing__features {
+		background: colors(cta-dark-green);
+		color: white;
+	}
+}
+
+.pricing__feature {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}

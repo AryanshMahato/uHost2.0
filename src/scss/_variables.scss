@@ -1,0 +1,25 @@
+$colors-map: (
+	primary: #74b9ff,
+	primary-dark: #0a79df,
+	primary-white: #eaf0f1,
+	primary-grey: #dae0e2,
+	cta-green: #7cec9f,
+	cta-dark-green: #218f76,
+	pricing-button: #01cbc6,
+	dark: #2c3335
+);
+
+@function colors($color) {
+	@return map-get($map: $colors-map, $key: $color);
+}
+
+@mixin desktop-view {
+	@media (min-width: 60rem) {
+		@content;
+	}
+}
+@mixin tab-view {
+	@media (min-width: 40rem) {
+		@content;
+	}
+}

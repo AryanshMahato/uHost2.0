@@ -1,0 +1,130 @@
+@import './variables';
+
+.main-header {
+	position: fixed;
+	width: 100vw;
+	max-width: 100%;
+	z-index: 100;
+	height: 5rem;
+	background: colors(primary);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.navbar-brand {
+	font-size: 3rem;
+	font-family: 'Lilita One', cursive;
+	padding: 0.5rem;
+}
+
+.nav-links {
+	display: none;
+
+	@include desktop-view {
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+}
+.nav-link {
+	display: block;
+	margin: 0 1rem;
+	font-size: 1.2rem;
+	border-bottom: 2px solid transparent;
+	padding: 0.5rem 0;
+	transition: 0.25s;
+}
+.nav-link:hover {
+	a {
+		color: white;
+	}
+	border-bottom: 3px solid white;
+}
+
+.nav-link--highlighted {
+	margin: 0;
+	margin-left: 1.5rem;
+	margin-right: 2rem;
+	font-size: 1.5rem;
+	border: none;
+	padding: 0.5rem 1rem;
+	background: colors(primary-dark);
+	border-radius: 25px;
+	cursor: pointer;
+	width: 12rem;
+	text-align: center;
+	border: 3px solid transparent;
+
+	a {
+		color: white;
+	}
+	&:hover {
+		border: 3px solid white;
+		box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	&:hover {
+		color: white;
+	}
+}
+
+.hamburger {
+	color: colors(dark);
+	@include desktop-view {
+		display: none;
+	}
+}
+
+.mobile-nav {
+	display: flex;
+	position: absolute;
+	width: 80vw;
+	right: 0;
+	top: 0;
+	z-index: 120;
+	height: 100vh;
+	background: #fff;
+	flex-flow: column;
+	box-shadow: -8px 0px 15px -11px rgba(0, 0, 0, 0.75);
+	transition: 0.5s;
+
+	ul {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 30%;
+		margin-top: 4rem;
+		> * {
+			margin: 0;
+		}
+		.nav-link--highlighted {
+			margin-top: 2rem;
+		}
+	}
+
+	#back-button {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+
+		@include tab-view() {
+			left: 5rem;
+		}
+	}
+
+	@include desktop-view() {
+		transform: translateX(100%);
+	}
+}
+
+.hide {
+	transform: translateX(90vw);
+}
