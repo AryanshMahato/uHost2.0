@@ -2,9 +2,9 @@
 
 @import './variables';
 
-@import './header.scss';
-@import './hero.scss';
-@import './pricing.scss';
+@import './_header.scss';
+@import './_hero.scss';
+@import './_pricing.scss';
 
 * {
 	box-sizing: border-box;
