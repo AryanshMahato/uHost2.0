@@ -1,0 +1,58 @@
+@import 'variables';
+
+.team-section {
+	background: colors(primary-white);
+	margin-top: 5rem;
+	padding: 1rem;
+
+	.team__annotation {
+		text-align: center;
+		font-size: 3rem;
+		color: colors(primary-dark);
+	}
+}
+
+.team__lists {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	list-style: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	.team__list {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+	}
+
+	@include desktop-view {
+		flex-flow: row;
+		justify-content: space-evenly;
+	}
+}
+
+.team__name {
+	color: colors(primary-dark);
+}
+.team__designation {
+	color: colors(designation);
+}
+
+.circle {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	img.steve-fix {
+		object-fit: cover;
+		object-position: top;
+	}
+}
