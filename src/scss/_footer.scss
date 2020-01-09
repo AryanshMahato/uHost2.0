@@ -1,0 +1,105 @@
+@import 'variables';
+
+.footer {
+	font-family: sans-serif;
+	width: 100%;
+	background: #000;
+	padding: 0.5rem;
+	margin-top: 5rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	@include desktop-view {
+		flex-flow: row;
+		justify-content: center;
+	}
+}
+
+.subscribe {
+	margin-top: 4rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	h2 {
+		color: white;
+		margin-bottom: 1rem;
+		font-weight: normal;
+		font-size: 1.5rem;
+	}
+
+	form {
+		margin-top: 1rem;
+		display: flex;
+		height: 2.5rem;
+		width: 90%;
+		input {
+			width: 240px;
+			font-size: 1rem;
+			padding: 0.2rem;
+			@include tab-view {
+				width: 280px;
+			}
+		}
+	}
+
+	@include tab-view {
+		h2 {
+			font-size: 2rem;
+		}
+	}
+
+	@include desktop-view {
+		margin-top: 0;
+		margin-right: 6rem;
+	}
+}
+.submit-email {
+	background: colors(primary-dark);
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.option-section {
+	color: white;
+	margin: 3rem 0;
+	align-items: center;
+
+	p {
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	> * {
+		margin-top: 2rem;
+	}
+	ul {
+		list-style: none;
+		color: colors(primary-grey);
+		li {
+			margin: 0.5rem 0;
+			cursor: pointer;
+		}
+	}
+
+	@include tab-view {
+		display: flex;
+		flex-flow: row;
+		align-items: flex-start;
+		margin-top: 5rem;
+
+		div {
+			margin: 0 6rem;
+		}
+	}
+
+	@include desktop-view {
+		div {
+			margin: 0 4rem;
+		}
+	}
+}
