@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="./src/css/styles.css" />
 		<title>uHost</title>
 	</head>
+
 	<body>
 		<div id="backdrop"></div>
 
@@ -16,11 +17,17 @@
 		<header class="main-header">
 			<div class="navbar-brand">uHost</div>
 			<ul id="nav-links" class="nav-links menu">
-				<li class="nav-link"><a href="#contact-us">Contact Us</a></li>
-				<li class="nav-link"><a href="#pricing">Pricing</a></li>
-				<li class="nav-link"><a href="#customers">Customers</a></li>
+				<li class="nav-link">
+					<a href="#contact-us" aria-disabled="true">Contact Us</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#pricings">Pricing</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#customers">Customers</a>
+				</li>
 				<li class="nav-link nav-link--highlighted">
-					<a href="#start-hosting">Start Hosting</a>
+					<a aria-disabled="true" href="#start-hosting">Start Hosting</a>
 				</li>
 			</ul>
 			<img id="hamburger" src="./Assets/FA/bars-solid.svg" />
@@ -28,11 +35,17 @@
 		<div id="mobile-nav" class="mobile-nav hide">
 			<ul class="nav-links">
 				<img id="back-button" src="./Assets/FA/arrow-left-solid.svg" />
-				<li class="nav-link"><a href="#contact-us">Contact Us</a></li>
-				<li class="nav-link"><a href="#pricing">Pricing</a></li>
-				<li class="nav-link"><a href="#customers">Customers</a></li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#contact-us">Contact Us</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#pricings">Pricing</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#customers">Customers</a>
+				</li>
 				<li class="nav-link nav-link--highlighted">
-					<a href="#start-hosting">Start Hosting</a>
+					<a aria-disabled="true" href="#start-hosting">Start Hosting</a>
 				</li>
 			</ul>
 		</div>
@@ -91,7 +104,7 @@
 					<li class="pricing__feature">10GB Storage</li>
 					<li class="pricing__feature">Basic Support</li>
 				</ul>
-				<button class="pricing__button">Choose Plan</button>
+				<button disabled class="pricing__button">Choose Plan</button>
 			</div>
 			<div class="pricing-list pricing-list--highlighted">
 				<h1 class="pricing__annotation">Premium</h1>
@@ -101,7 +114,7 @@
 					<li class="pricing__feature">100GB Storage</li>
 					<li class="pricing__feature">Premium Support</li>
 				</ul>
-				<button class="pricing__button">Choose Plan</button>
+				<button disabled class="pricing__button">Choose Plan</button>
 			</div>
 			<div class="pricing-list">
 				<h1 class="pricing__annotation">Enterprise</h1>
@@ -111,10 +124,11 @@
 					<li class="pricing__feature">0.001$/GB Storage</li>
 					<li class="pricing__feature">Premium Support</li>
 				</ul>
-				<button class="pricing__button">Contact Sales</button>
+				<button disabled class="pricing__button">Contact Sales</button>
 			</div>
 		</main>
 		<!-- Pricing Section Ends Here -->
+		<!-- Information Section Starts Here -->
 		<section class="information">
 			<div class="information__list">
 				<img src="./Assets/globe-americas-solid.svg" alt="Globe" />
@@ -130,7 +144,7 @@
 			</div>
 		</section>
 		<!-- Information Section Ends Here -->
-		<!-- Customer Overview section Starts here -->
+		<!-- Customer Overview section Starts Here -->
 		<div class="customer-dialog">
 			<img src="./Assets/Netflix.svg" alt="NetFlix" />
 			<div>
@@ -146,10 +160,10 @@
 					efficient as possible.
 				</p>
 			</div>
-			<a href="#" class="more-customers">More Customers</a>
+			<a href="#" aria-disabled="true" class="more-customers">More Customers</a>
 		</div>
 		<!-- Customer Section Ends Here -->
-		<!-- Team Section Starts here -->
+		<!-- Team Section Starts Here -->
 		<div class="team-section">
 			<h1 class="team__annotation">Our Team</h1>
 			<ul class="team__lists">
@@ -183,6 +197,44 @@
 				</li>
 			</ul>
 		</div>
+		<!-- Team Section Starts Here -->
+		<!-- Footer Section Starts Here -->
+		<section class="footer">
+			<div class="subscribe">
+				<h2>Subscribe to Newsletters</h2>
+				<form>
+					<input type="email" id="email" placeholder="Email" />
+					<button type="submit" disabled class="submit-email">
+						Subscribe
+					</button>
+				</form>
+			</div>
+			<div class="option-section">
+				<div class="company">
+					<p>Company</p>
+					<ul class="company-section__lists">
+						<li class="company-section__list">About</li>
+						<li class="company-section__list">Leadership</li>
+						<li class="company-section__list">Blog</li>
+						<li class="company-section__list">Careers</li>
+						<li class="company-section__list">Partners</li>
+						<li class="company-section__list">Referral Program</li>
+						<li class="company-section__list">Press</li>
+						<li class="company-section__list">Legal & Security</li>
+					</ul>
+				</div>
+				<div class="contact">
+					<p>Contact</p>
+					<ul class="contact__lists">
+						<li class="contact__list">Support</li>
+						<li class="contact__list">Sales</li>
+						<li class="contact__list">Report Abuse</li>
+						<li class="contact__list">System Status</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<!-- Development Code -->
 		<div style="height: 200px;"></div>
 		<script src="./src/js/index.js"></script>
