@@ -17,11 +17,17 @@
 		<header class="main-header">
 			<div class="navbar-brand">uHost</div>
 			<ul id="nav-links" class="nav-links menu">
-				<li class="nav-link"><a href="#contact-us">Contact Us</a></li>
-				<li class="nav-link"><a href="#pricing">Pricing</a></li>
-				<li class="nav-link"><a href="#customers">Customers</a></li>
+				<li class="nav-link">
+					<a href="#contact-us" aria-disabled="true">Contact Us</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#pricings">Pricing</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#customers">Customers</a>
+				</li>
 				<li class="nav-link nav-link--highlighted">
-					<a href="#start-hosting">Start Hosting</a>
+					<a aria-disabled="true" href="#start-hosting">Start Hosting</a>
 				</li>
 			</ul>
 			<i id="hamburger" class="fa fa-bars hamburger fa-2x"></i>
@@ -29,11 +35,17 @@
 		<div id="mobile-nav" class="mobile-nav hide">
 			<ul class="nav-links">
 				<i id="back-button" class="fa fa-arrow-left fa-2x"></i>
-				<li class="nav-link"><a href="#contact-us">Contact Us</a></li>
-				<li class="nav-link"><a href="#pricing">Pricing</a></li>
-				<li class="nav-link"><a href="#customers">Customers</a></li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#contact-us">Contact Us</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#pricings">Pricing</a>
+				</li>
+				<li class="nav-link">
+					<a aria-disabled="true" href="#customers">Customers</a>
+				</li>
 				<li class="nav-link nav-link--highlighted">
-					<a href="#start-hosting">Start Hosting</a>
+					<a aria-disabled="true" href="#start-hosting">Start Hosting</a>
 				</li>
 			</ul>
 		</div>
@@ -92,7 +104,7 @@
 					<li class="pricing__feature">10GB Storage</li>
 					<li class="pricing__feature">Basic Support</li>
 				</ul>
-				<button class="pricing__button">Choose Plan</button>
+				<button disabled class="pricing__button">Choose Plan</button>
 			</div>
 			<div class="pricing-list pricing-list--highlighted">
 				<h1 class="pricing__annotation">Premium</h1>
@@ -102,7 +114,7 @@
 					<li class="pricing__feature">100GB Storage</li>
 					<li class="pricing__feature">Premium Support</li>
 				</ul>
-				<button class="pricing__button">Choose Plan</button>
+				<button disabled class="pricing__button">Choose Plan</button>
 			</div>
 			<div class="pricing-list">
 				<h1 class="pricing__annotation">Enterprise</h1>
@@ -112,7 +124,7 @@
 					<li class="pricing__feature">0.001$/GB Storage</li>
 					<li class="pricing__feature">Premium Support</li>
 				</ul>
-				<button class="pricing__button">Contact Sales</button>
+				<button disabled class="pricing__button">Contact Sales</button>
 			</div>
 		</main>
 		<!-- Pricing Section Ends Here -->
@@ -148,7 +160,7 @@
 					efficient as possible.
 				</p>
 			</div>
-			<a href="#" class="more-customers">More Customers</a>
+			<a href="#" aria-disabled="true" class="more-customers">More Customers</a>
 		</div>
 		<!-- Customer Section Ends Here -->
 		<!-- Team Section Starts Here -->
@@ -192,7 +204,7 @@
 				<h2>Subscribe to Newsletters</h2>
 				<form>
 					<input type="email" id="email" placeholder="Email" />
-					<button type="submit" class="submit-email">
+					<button type="submit" disabled class="submit-email">
 						Subscribe
 					</button>
 				</form>
