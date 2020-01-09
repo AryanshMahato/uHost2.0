@@ -75,8 +75,10 @@ a {
 	}
 }
 
-.hamburger {
+#hamburger {
 	color: colors(dark);
+	height: 2rem;
+	width: 2rem;
 	@include desktop-view {
 		display: none;
 	}
@@ -114,6 +116,8 @@ a {
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
+		width: 2rem;
+		height: 2rem;
 
 		@include tab-view() {
 			left: 5rem;

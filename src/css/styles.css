@@ -23,9 +23,9 @@ a { text-decoration: none; color: black; font-family: 'Roboto', sans-serif; }
 
 a:hover { color: white; }
 
-.hamburger { color: #2c3335; }
+#hamburger { color: #2c3335; height: 2rem; width: 2rem; }
 
-@media (min-width: 60rem) { .hamburger { display: none; } }
+@media (min-width: 60rem) { #hamburger { display: none; } }
 
 .mobile-nav { display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; width: 80vw; right: 0; top: 0; z-index: 120; height: 100vh; background: #fff; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-shadow: -8px 0px 15px -11px rgba(0, 0, 0, 0.75); box-shadow: -8px 0px 15px -11px rgba(0, 0, 0, 0.75); -webkit-transition: 0.5s; transition: 0.5s; }
 
@@ -35,7 +35,7 @@ a:hover { color: white; }
 
 .mobile-nav ul .nav-link--highlighted { margin-top: 2rem; }
 
-.mobile-nav #back-button { position: absolute; top: 1rem; left: 1rem; }
+.mobile-nav #back-button { position: absolute; top: 1rem; left: 1rem; width: 2rem; height: 2rem; }
 
 @media (min-width: 40rem) { .mobile-nav #back-button { left: 5rem; } }
 
