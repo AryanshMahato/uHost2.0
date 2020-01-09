@@ -118,7 +118,7 @@ a { text-decoration: none; color: black; font-family: 'Roboto', sans-serif; }
 
 .customer-dialog p.starter { margin-bottom: 0.5rem; }
 
-.customer-dialog a { margin-top: 1.5rem; background: #7cec9f; width: 80%; text-align: center; padding: 0.5rem; color: black; font-size: 1.2rem; cursor: pointer; border-radius: 15px; }
+.customer-dialog a { margin-top: 1.5rem; margin-bottom: 1.5rem; background: #7cec9f; width: 80%; text-align: center; padding: 0.5rem; color: black; font-size: 1.2rem; cursor: pointer; border-radius: 15px; }
 
 @media (min-width: 60rem) { .customer-dialog { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .customer-dialog h1 { font-size: 2.5rem; }
